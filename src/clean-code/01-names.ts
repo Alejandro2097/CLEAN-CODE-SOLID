@@ -3,18 +3,18 @@
     // Ejemplo
     // Archivos a evaluar - files to evaluate
     const filesToEvaluate = [
-        { id: 1, f: false },
-        { id: 2, f: false },
-        { id: 3, f: true },
-        { id: 4, f: false },
-        { id: 5, f: false },
-        { id: 7, f: true },
+        { id: 1, flagged: false },
+        { id: 2, flagged: false },
+        { id: 3, flagged: true },
+        { id: 4, flagged: false },
+        { id: 5, flagged: false },
+        { id: 7, flagged: true },
     ]; 
     
     // Archivos marcados para borrar - files to delete
-    const arhivos = fs.map( f => f.f );
+    const arhivos = filesToEvaluate.map( file => file.flagged );
 
-    
+    // Malos nombres
     class AbstractUser { };
     class UserMixin { };
     class UserImplementation { };
