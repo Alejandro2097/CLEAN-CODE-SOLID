@@ -2,7 +2,7 @@
 
     // Ejemplo
     // Archivos a evaluar - files to evaluate
-    const fs = [
+    const filesToEvaluate = [
         { id: 1, f: false },
         { id: 2, f: false },
         { id: 3, f: true },
