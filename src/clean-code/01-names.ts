@@ -28,10 +28,10 @@
     // Todo: Tarea
         
     // día de hoy - today
-    const ddmmyyyy = new Date();
+    const today = new Date();
     
     // días transcurridos - elapsed time in days
-    const d: number = 23;
+    const daysPassed: number = 23;
     
     // número de archivos en un directorio - number of files in directory
     const dir = 33;
