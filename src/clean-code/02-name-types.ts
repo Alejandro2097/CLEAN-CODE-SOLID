@@ -20,32 +20,32 @@
 
     // Otros ejercicios
     // tiempo inicial
-    const start = new Date().getTime();
+    const initialTime = new Date().getTime();
     //....
     // 3 doritos después
     //...
     // Tiempo al final
-    const end = new Date().getTime() - start;
+    const finalTime = new Date().getTime() - initialTime;
 
 
     // Funciones
     // Obtiene los libros
-    function book() {
+    function getBooks() {
         throw new Error('Function not implemented.');
     }
 
     // obtiene libros desde un URL
-    function BooksUrl( u: string) {
+    function getBooksByUrl( u: string) {
         throw new Error('Function not implemented.');
     }
     
     // obtiene el área de un cuadrado basado en sus lados
-    function areaCuadrado( s: number ) {
+    function getAreaBySide( s: number ) {
         throw new Error('Function not implemented.');
     }
 
     // imprime el trabajo
-    function printJobIfJobIsActive() {
+    function printJob() {
         throw new Error('Function not implemented.');
     }
     
