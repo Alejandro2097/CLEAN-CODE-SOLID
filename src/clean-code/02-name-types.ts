@@ -10,7 +10,7 @@
     const userList = [{id: 1, email: 'fernando@google.com'},{ id: 2, email: 'juan@google.com' }, { id: 3, email: 'melissa@google.com' }];
 
     // Listado de emails de los usuarios
-    const emails = userList.map( user => user.email );
+    const emailListPerUser = userList.map( user => user.email );
 
     // Variables booleanas de un video juego
     const jump = false;
