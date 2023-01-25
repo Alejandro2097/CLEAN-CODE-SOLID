@@ -16,7 +16,11 @@
     }
     
     // Crear una película
-    function createMovie(title: string, description: string, rating: number, cast: string[] ) {
+    function createMovie(
+        title: string,
+        description: string,
+        rating: number,
+        cast: string[] ) {
         console.log({ title, description, rating, cast });
     }
 
