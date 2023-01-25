@@ -6,7 +6,7 @@
     }
 
     // función para obtener información de los actores de una película - Actors o Cast // id = movieId getMovieCast
-    function getActorMovieInfo( id: string ) {
+    function getMovieCastById( id: string ) {
         console.log({ id });
     }
 
