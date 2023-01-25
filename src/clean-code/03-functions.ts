@@ -14,7 +14,12 @@
     function getActorBioById( ActorId: string ) {
         console.log({ ActorId });
     }
-    
+    interface Movie {
+        title:       string;
+        description: string;
+        rating:      string;
+        cast:        string[];
+    }
     // Crear una película
     function createMovie(
         title: string,
