@@ -4,26 +4,25 @@
     // Resolver sin la triple condicional dentro del if
     // includes? arrays?
     function isRedFruit( fruit: string ): boolean {
-        
-        if ( fruit === 'manzana' || fruit === 'cereza' || fruit === 'ciruela' ) {
-            return true;
-        } else {
-            return false;
-        }
+        const fruits = ['manzana', 'cereza', 'ciruela'];
+        return fruits.includes(fruit)  ? true : false ;
     }
 
     // Simplificar esta función
     // switch? Object literal? validar posibles colores
     function getFruitsByColor( color: string ): string[] {
-
-        if ( color === 'red' ) {
-            return ['manzana','fresa'];
-        } else if ( color === 'yellow') {
-            return ['piña','banana'];
-        } else if ( color === 'purple') {
-            return ['moras','uvas']
-        } else {
-            throw Error('the color must be: red, yellow, purple');
+        switch(color){
+            case 'red':
+                return ['manzana','fresa'];
+                break;
+            case 'yellow':
+                return ['piña','banana'];
+                break;
+            case 'purple':
+                return ['moras','uvas']
+                break;
+            default:
+                throw Error('the color must be: red, yellow, purple');
         }
     }
 
