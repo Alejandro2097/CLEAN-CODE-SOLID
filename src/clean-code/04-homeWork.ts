@@ -7,23 +7,36 @@
         const fruits = ['manzana', 'cereza', 'ciruela'];
         return fruits.includes(fruit)  ? true : false ;
     }
+ 
 
     // Simplificar esta función
     // switch? Object literal? validar posibles colores
+    type FruitColor = 'red'|'yellow'|'purple';
+    // Simplificar esta función
+    // switch? Object literal? validar posibles colores
     function getFruitsByColor( color: string ): string[] {
-        switch(color){
-            case 'red':
-                return ['manzana','fresa'];
-                break;
-            case 'yellow':
-                return ['piña','banana'];
-                break;
-            case 'purple':
-                return ['moras','uvas']
-                break;
-            default:
-                throw Error('the color must be: red, yellow, purple');
+        const fruitsByColor: any = {
+            red:    ['manzana','fresa'],
+            yellow: ['piña','banana'],
+            purple: ['moras','uvas'],
+        };
+
+        if ( !Object.keys( fruitsByColor ).includes(color) ) {
+            throw Error('the color must be: red, yellow, purple');
         }
+        
+        return fruitsByColor[color];
+
+        // switch( color ) {
+        //     case 'red':
+        //         return ['manzana','fresa'];
+        //     case 'yellow':
+        //         return ['piña','banana'];
+        //     case 'purple':
+        //         return ['moras','uvas'];
+        //     default:
+        //         throw Error('the color must be: red, yellow, purple');
+        // }
     }
 
     // Simplificar esta función
