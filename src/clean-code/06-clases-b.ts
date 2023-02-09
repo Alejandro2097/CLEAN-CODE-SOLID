@@ -4,12 +4,21 @@
 
     type Gender = 'M'|'F';
 
+    interface personProps {
+        name     : string; 
+        gender   : Gender;
+        birthdate: Date;
+    }
+
     class Person {
-        constructor(
-            public name: string, 
-            public gender: Gender, 
-            public birthdate: Date
-        ){}
+        public name: string;
+        public gender: Gender;
+        public birthdate: Date;
+        constructor({name, gender, birthdate}: personProps){
+            this.name      = name;
+            this.gender    = gender;
+            this.birthdate = birthdate
+        }
     }
 
 
