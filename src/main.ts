@@ -1,4 +1,4 @@
-import './clean-code/07-tarea';
+import './solid/SRP';
 import './style.css';
 
 const app = document.querySelector<HTMLDivElement>('#app')!
