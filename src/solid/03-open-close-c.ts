@@ -3,13 +3,14 @@
 export class HttpClient {
     // async get(url: string) {
     //     const  { data, status  } = await axios.get(url);
-    //     return { data, status }
+    //     return { data, status  }
     // }
 
     async get(url: string) {
 
         const resp = await fetch(url);
-        return { data: '', status: 500}
+        const data = await resp.json();
+        return { data, status: resp.status}
     }
 
 }
